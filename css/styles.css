@@ -737,15 +737,15 @@ img {
         
                 }
 
-.icon-backdrope{
-    display: block;
-    width: 18px;
-    height: 18px;
-    fill: currentColor;
+.backdrop .icon-backdrop{
+    fill:currentColor;
+    
     
 }
-.backdrop .backdrope-button{
+.backdrop .backdrop-button{
     position: absolute;
+    align-items: center;
+    justify-content: center;
     top: 8px;
     right: 8px;
     height: 30px;
@@ -755,4 +755,13 @@ img {
     background-color: var(--white-color);
     border: 1px solid var(--button-backdrope);
     border-radius: 50%;
+    transition: color 250ms var(--animation-timing-function);
+
+}
+
+.backdrop .backdrop-button:hover,
+.backdrop .backdrop-button:focus{
+    outline: none;
+    cursor: pointer;
+    color: var(--accent-color);
 }
